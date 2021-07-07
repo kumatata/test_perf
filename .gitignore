@@ -17,6 +17,7 @@ yarn-error.log
 ###< symfony/webpack-encore-bundle ###
 
 .DS_Store/
+dataset/.DS_Store
 
 .idea/
 
