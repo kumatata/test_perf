@@ -1,25 +1,42 @@
-# **Installe Projet**
+# **Instal Project**
 ~~~~
 composer install
 yarn install
 ~~~~
 
-# **Setup DB Projet**
+# **Setup DB Project**
 
-Creer un fichier `.env.local` <br>
-Aller sur votre base de donnée style PHPMYADMIN <br>
+Create file 
+~~~
+.env.local
+~~~
 
-Créer votre DB :  
+Create DB :  
 ~~~~
 php bin/console doctrine:database:create
-php bin/console make:migration
+Import file `dataset.sql.zip`
 ~~~~
-Importer le fichier `dataset.sql.zip` <br>
-
-## **Run Projet**
-
+## **Play last migration** : Version20210708220102.php
 ~~~~
-symfony serve | symfony server:start 
+php bin/console doctrine:migrations:migrate 
+~~~~
+
+## **Run Project**
+~~~~
+symfony serve
 yarn watch 
 ~~~~
 
+## **3 Different Accounts**
+~~~~
+visitor@mail.com 
+password 
+~~~~
+~~~~
+user@mail.com 
+password 
+~~~~
+~~~~
+admin@mail.com 
+password 
+~~~~
