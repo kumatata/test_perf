@@ -36,10 +36,3 @@ jobs:
         BLACKFIRE_SERVER_TOKEN: ${{ secrets.BLACKFIRE_SERVER_TOKEN }}
         BLACKFIRE_CLIENT_ID: ${{ secrets.BLACKFIRE_CLIENT_ID }}
         BLACKFIRE_CLIENT_TOKEN: ${{ secrets.BLACKFIRE_CLIENT_TOKEN }}
-
-    # Trigger a profile using Blackfire CLI tool.
-    - name: Profile list-users command
-      env:
-        APP_ENV: prod
-        APP_DEBUG: 0
-      run: blackfire run php bin/console app:list-users
