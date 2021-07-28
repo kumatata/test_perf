@@ -1,18 +1,20 @@
 <template>
-    <div id="app">
+
+ <div id="app">
 
       <div v-for="data in datas" :key="data.id">
         {{ datas }}
       </div>
        
     </div>
+
 </template>
 
 <script>
 import axios from "axios";
 
 export default {
-  name: "GetPage",
+  name: "GetLoadsData",
   data() {
     return {
       datas: null,
@@ -21,7 +23,7 @@ export default {
 
   mounted() {
     axios
-      .get("https://127.0.0.1:8000/api/cities")
+      .get("https://localhost:8000/api/elect_municipales?pagination=false", {timeout:50})
       .then((response) => (this.datas = response.data));
   },
 };

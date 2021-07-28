@@ -9,7 +9,9 @@
 
 import Vue from 'vue';
 import HomePage from "./js/components/HomePage"; 
-import GetPage from "./js/components/GetPage"
+import GetPage from "./js/components/GetPage";
+import GetLoadsData from "./js/components/GetLoadsData";
+
 
 
 
@@ -17,6 +19,7 @@ import './styles/app.scss';
 
 Vue.component('homepage-app-component', HomePage);
 Vue.component('get-page-component', GetPage);
+Vue.component('get-loads-data-component', GetLoadsData)
 
 
 const app = new Vue({
