@@ -6,15 +6,13 @@
     </script> #}
 
     <div id="homepage-app">
-COUCOU JE SUIS LENT 
 
 	{% for city in cities %}
     <p>{{city.name}}</p>
     <p>{{city.countrycode}}</p>
     <p>{{city.district}}</p>
-    <p>{{city.person}}</p>
-    <p>{{city.country}}</p>
+    <p>{{city.country.name}}</p>
 
-    {% endif %}
+    {% endfor %}
     </div>
 {% endblock %}
