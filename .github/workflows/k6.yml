@@ -10,5 +10,5 @@ jobs:
       - name: Run k6 local test
         uses: k6io/action@v0.2.0
         with:
-          filename: scripts/test_scripts.js
+          filename: test_scripts.js
           flags: --vus 50 --duration 10s
