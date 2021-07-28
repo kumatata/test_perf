@@ -21,4 +21,33 @@ class FrontendController extends AbstractController
             'user' => $serializer->serialize($this->getUser(), 'jsonld')
         ]);
     }
+
+    /**
+     * @Route("/getData")
+     */
+
+    public function getData(SerializerInterface $serializer)
+    {
+
+        return $this->render('frontend/get.html.twig', [
+            'user' => $serializer->serialize($this->getUser(), 'jsonld')
+        ]);
+    }
+
+
+    /**
+     * @Route("/getSlowData")
+     */
+
+    public function getSlowData(SerializerInterface $serializer)
+    {
+
+        
+
+        return $this->render('frontend/get.html.twig', [
+            'user' => $serializer->serialize($this->getUser(), 'jsonld')
+        ]);
+    }
+    
+    
 }
