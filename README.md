@@ -14,7 +14,7 @@ Create file
 Create DB :  
 ~~~~
 php bin/console doctrine:database:create
-Import file `dataset.sql.zip`
+Import file in  `dataset\test_perf.sql.zip`
 ~~~~
 ## **Play last migration** : Version20210708220102.php
 ~~~~

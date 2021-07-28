@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Countrylanguage
  * @ApiResource()
  * @ORM\Table(name="countrylanguage", indexes={@ORM\Index(name="IDX_69DFC8A5F92F3E70", columns={"country_id"})})
- * @ @ORM\Entity(repositoryClass=CountrylanguageRepository::class)
+ * @ @ORM\Entity
  */
 class Countrylanguage
 {
