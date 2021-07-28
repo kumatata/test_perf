@@ -40,9 +40,11 @@ export default {
           .post('/login', {
             email: this.email,
             password: this.password
+            
           })
           .then(response => {
-            console.log(response.data);
+            console.log(this.email);
+             console.log(this.password);
             this.$emit('user-authenticated', userUri);
             this.email = '';
             this.password = '';

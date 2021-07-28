@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * City
  * @ApiResource()
  * @ORM\Table(name="city", indexes={@ORM\Index(name="IDX_2D5B0234217BBB47", columns={"person_id"}), @ORM\Index(name="IDX_2D5B0234F92F3E70", columns={"country_id"})})
- * @ORM\Entity
+ * @ @ORM\Entity(repositoryClass=CityRepository::class)
  */
 class City
 {
