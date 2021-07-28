@@ -2,9 +2,13 @@
 
 namespace App\Controller;
 
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\SerializerInterface;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use App\Entity\ElectMunicipale; 
+use App\Repository\ElectMunicipaleRepository; 
+use ApiPlatform\Core\Annotation\ApiResource;
+
 
 /**
  * Controller to render a basic "homepage".
@@ -26,27 +30,20 @@ class FrontendController extends AbstractController
      * @Route("/getData")
      */
 
-    public function getData(SerializerInterface $serializer)
+    public function getData()
     {
 
-        return $this->render('frontend/get.html.twig', [
-            'user' => $serializer->serialize($this->getUser(), 'jsonld')
-        ]);
+        return $this->render('frontend/get.html.twig');
     }
 
 
     /**
-     * @Route("/getSlowData")
+     * @Route("/getLoadsData")
      */
 
-    public function getSlowData(SerializerInterface $serializer)
-    {
-
-        
-
-        return $this->render('frontend/get.html.twig', [
-            'user' => $serializer->serialize($this->getUser(), 'jsonld')
-        ]);
+    public function getLoadsData( )
+    {       
+        return $this->render('frontend/getloadsdata.html.twig');
     }
     
     

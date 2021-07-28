@@ -1,13 +1,9 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <script>
-        window.user = {{ user|raw }};
-    </script>
-
     <div id="homepage-app">
         <get-page-component
-                entrypoint="{{ path('api_entrypoint') }}"
+              
         ></get-page-component>
     </div>
 {% endblock %}

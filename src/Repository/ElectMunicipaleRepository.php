@@ -2,25 +2,25 @@
 
 namespace App\Repository;
 
-use App\Entity\ElecMunicipale;
+use App\Entity\ElectMunicipale;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * @method ElecMunicipale|null find($id, $lockMode = null, $lockVersion = null)
- * @method ElecMunicipale|null findOneBy(array $criteria, array $orderBy = null)
- * @method ElecMunicipale[]    findAll()
- * @method ElecMunicipale[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
+ * @method ElectMunicipale|null find($id, $lockMode = null, $lockVersion = null)
+ * @method ElectMunicipale|null findOneBy(array $criteria, array $orderBy = null)
+ * @method ElectMunicipale[]    findAll()
+ * @method ElectMunicipale[]    findBy(array $criteria, array $orderBy = null, $limit = null, $offset = null)
  */
-class ElecMunicipaleRepository extends ServiceEntityRepository
+class ElectMunicipaleRepository extends ServiceEntityRepository
 {
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, ElecMunicipale::class);
+        parent::__construct($registry, ElectMunicipale::class);
     }
 
     // /**
-    //  * @return ElecMunicipale[] Returns an array of ElecMunicipale objects
+    //  * @return ElectMunicipale[] Returns an array of ElectMunicipale objects
     //  */
     /*
     public function findByExampleField($value)
@@ -37,7 +37,7 @@ class ElecMunicipaleRepository extends ServiceEntityRepository
     */
 
     /*
-    public function findOneBySomeField($value): ?ElecMunicipale
+    public function findOneBySomeField($value): ?ElectMunicipale
     {
         return $this->createQueryBuilder('e')
             ->andWhere('e.exampleField = :val')
