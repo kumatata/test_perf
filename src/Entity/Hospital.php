@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Hospital
  * @ApiResource()
  * @ORM\Table(name="hospital")
- *  @ORM\Entity(repositoryClass=HospitalRepository::class)
+ *  @ORM\Entity
  */
 class Hospital
 {

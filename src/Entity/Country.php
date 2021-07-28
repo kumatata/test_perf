@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Country
  * @ApiResource()
  * @ORM\Table(name="country")
- * @ORM\Entity(repositoryClass=CountryRepository::class)
+ * @ORM\Entity
  */
 class Country
 {

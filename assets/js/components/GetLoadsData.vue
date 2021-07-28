@@ -23,7 +23,7 @@ export default {
 
   mounted() {
     axios
-      .get("https://localhost:8000/api/elect_municipales?pagination=false", {timeout:50})
+      .get("https://localhost:8000/api/elect_municipales?pagination=false")
       .then((response) => (this.datas = response.data));
   },
 };

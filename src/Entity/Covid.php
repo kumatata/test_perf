@@ -9,7 +9,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Covid
  * @ApiResource()
  * @ORM\Table(name="covid")
- *  @ORM\Entity(repositoryClass=CovidRepository::class)
+ * @ORM\Entity
  */
 class Covid
 {

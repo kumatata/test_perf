@@ -10,7 +10,7 @@ use ApiPlatform\Core\Annotation\ApiResource;
  * ElectMunicipale
  *
  * @ORM\Table(name="elect_municipale")
- * @ORM\Entity(repositoryClass="App\Repository\ElectMunicipaleRepository")
+ * @ORM\Entity
  */
 class ElectMunicipale
 {
