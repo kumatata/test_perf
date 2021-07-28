@@ -21,4 +21,14 @@ class FrontendController extends AbstractController
             'user' => $serializer->serialize($this->getUser(), 'jsonld')
         ]);
     }
+
+     /**
+     * @Route("/slow-expensive")
+     */
+    public function slowExpensive()
+    {
+        
+
+        return $this->render('frontend/slow_expensive.html.twig', ['']);
+    }
 }
