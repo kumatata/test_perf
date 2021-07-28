@@ -8,11 +8,16 @@
 
 
 import Vue from 'vue';
-import HomePage from "./js/components/HomePage"
+import HomePage from "./js/components/HomePage"; 
+import GetPage from "./js/components/GetPage"
+
+
 
 import './styles/app.scss';
 
 Vue.component('homepage-app-component', HomePage);
+Vue.component('get-page-component', GetPage);
+
 
 const app = new Vue({
     el: '#homepage-app'

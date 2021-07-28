@@ -31,10 +31,12 @@
 <script>
 import axios from 'axios';
 import loginForm from './LoginForm';
+import GetPage from './GetPage.vue';
 
 export default {
   components: {
-    loginForm
+    loginForm,
+    GetPage
   },
   props: ['entrypoint'],
   methods: {
